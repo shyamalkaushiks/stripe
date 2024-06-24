@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <!-- <script src="https://js.stripe.com/v3/"></script> -->
+</head>
+<body>
+
+   <p>Payment details are listed below</p>
+   <p>Name is {{.Payment.Name}}</p>
+   <p>Email is {{.Payment.Email}}</p>
+   <p>Amount is {{.Payment.Amount}}</p>
+
+   <p id="payment-amount" style="display: none;">{{ .Payment.Amount }}</p>
+
+
+   <section>
+    
+    <form action="/create-checkout-session" method="POST">
+        <input type="hidden" name="name" value="{{.Payment.Name}}">
+        <input type="hidden" name="email" value="{{.Payment.Email}}">
+        <input type="hidden" name="amount" value="{{.Payment.Amount}}">
+        <button type="submit" id="checkout-button">Checkout</button>
+    </form>
+
+  </section>
+
+  
+
+
+</body>
+</html>
