@@ -28,8 +28,8 @@ since i am using a demo account this page will open
 this page will open  ![image](https://github.com/shyamalkaushiks/stripe/assets/47667670/af90ef91-ebd8-478f-94fd-c0155c397b4b)
 
 
-****now in my code short descition what will happening ****
-i am taking details from user and on checkout a session is created and user is redirect to stripe and i am monitoring payment intent and on payment_intent.succeeded  i am saving details in db with status success
+****now in my code short description what will happening ****
+i am taking details from user and on checkout a session is created and user is redirected to stripe and i am monitoring payment intent and on payment_intent.succeeded  i am saving details in db with status success
 on failure i means when payment_intent.payment_failed
 
 printing failed on ui we can also save this in db
