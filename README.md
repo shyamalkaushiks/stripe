@@ -1,6 +1,11 @@
 # stripe
 
-To use this application run  go run main.go
+To use this application run  **go run main.go**
+
+and in another tab in vs code  do 
+stripe login
+stripe listen --forward-to localhost:8080/webhook
+it will monitor the webhook
 
 then open browser and hit this url 
 http://localhost:8080/
@@ -23,4 +28,19 @@ since i am using a demo account this page will open
 this page will open  ![image](https://github.com/shyamalkaushiks/stripe/assets/47667670/af90ef91-ebd8-478f-94fd-c0155c397b4b)
 
 
+****now in my code short descition what will happening ****
+i am taking details from user and on checkout a session is created and user is redirect to stripe and i am monitoring payment intent and on payment_intent.succeeded  i am saving details in db with status success
+on failure i means when payment_intent.payment_failed
+
+printing failed on ui we can also save this in db
+
+
+
+
+screenshot of terminal
+
+![image](https://github.com/shyamalkaushiks/stripe/assets/47667670/de762597-5519-48a9-92cc-46125f07fb10)
+
+
+![image](https://github.com/shyamalkaushiks/stripe/assets/47667670/2c5bf25b-d6da-4056-8ecc-d03f0f090f04)
 
