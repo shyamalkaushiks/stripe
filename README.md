@@ -5,7 +5,8 @@ To use this application run  go run main.go
 then open browser and hit this url 
 http://localhost:8080/
 now you will see a form like this
-![image](https://github.com/shyamalkaushiks/stripe/assets/47667670/6913d822-5ffc-4db8-8d28-db345b895d23)
+![image](https://github.com/shyamalkaushiks/stripe/assets/47667670/9f42ee5a-e15d-471e-87f5-7a419a484960)
+
 
 now fill the details and click submit you will redirect on this url http://localhost:8080/donate
 
